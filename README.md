@@ -1,6 +1,6 @@
-# Pancake History
+# 0x1 Exchange History
 
-Check it out live: [https://pancakeswap.info/](https://pancakeswap.info/).
+Check it out live: info.0x1.exchange 
 
 ### To Start Development
 

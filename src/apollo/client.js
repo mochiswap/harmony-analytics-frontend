@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://subgraph.0x1.finance/subgraphs/name/0x1/0x1swap',
+    uri: 'http://149.28.131.207:8000/subgraphs/name/0x1/0x1swap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -12,7 +12,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.0x1.finance/graphql',
+    uri: 'http://149.28.131.207:8030/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,

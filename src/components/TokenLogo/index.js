@@ -77,6 +77,21 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       </StyledEthereumLogo>
     )
   }
+  
+  if (address?.toLowerCase() === '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src= 'https://tokens.0x1.finance/images/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
 
   const path = `https://tokens.0x1.finance/images/${isAddress(address)}.png`
 

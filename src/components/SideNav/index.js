@@ -156,40 +156,40 @@ function SideNav({ history }) {
                     Accounts
                   </Option>
                 </BasicLink>
-				<Toggle isActive={isDark} toggle={toggleDarkMode} />
+                <Toggle isActive={isDark} toggle={toggleDarkMode} />
               </AutoColumn>
             )}
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              <Link href="https://0x1.exchange" target="_blank">
+              {/* <Link href="https://0x1.exchange" target="_blank">
                 0x1.Exchange
+              </Link> */}
+            </HeaderText>
+            <HeaderText>
+              <Link href="https://app.mochiswap.io" target="_blank">
+                MochiSwap
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://0x1.finance" target="_blank">
-                0x1.Finance
-              </Link>
-            </HeaderText>
-			<HeaderText>
-              <Link href="https://farm.0x1.finance" target="_blank">
+              <Link href="https://farms.mochiswap.io" target="_blank">
                 Farming Pool
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/0x1Finance" target="_blank">
+              <Link href="https://twitter.com/mochiswap" target="_blank">
                 Twitter
               </Link>
             </HeaderText>
-			<HeaderText>
-              <Link href="https://t.me/finance0x1" target="_blank">
+            <HeaderText>
+              <Link href="https://t.me/mochiswap" target="_blank">
                 Telegram
               </Link>
             </HeaderText>
-			<HeaderText>
-              <Link href="https://discord.gg/xeF8EAx45g" target="_blank">
+            <HeaderText>
+              {/* <Link href="https://discord.gg/xeF8EAx45g" target="_blank">
                 Discord
-              </Link>
+              </Link> */}
             </HeaderText>
           </AutoColumn>
           {!below1180 && (

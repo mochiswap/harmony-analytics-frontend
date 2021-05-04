@@ -46,10 +46,9 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     )
   } else {
     return (
-      `https://0x1.exchange/#/` +
+      `https://app.mochiswap.io/#/` +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token0Address}/${
-        token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token1Address
+      `/${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token0Address}/${token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token1Address
       }`
     )
   }
@@ -57,20 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://0x1.exchange/#/swap?inputCurrency=${token0Address}`
+    return `https://app.mochiswap.io/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://0x1.exchange/#/swap?inputCurrency=${
-      token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token0Address
-    }&outputCurrency=${token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token1Address}`
+    return `https://app.mochiswap.io/#/swap?inputCurrency=${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token0Address
+      }&outputCurrency=${token1Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://0x1.exchange/#/swap/BNB/${token0Address}`
+  return `https://app.mochiswap.io/#/swap/BNB/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://0x1.exchange/#/swap'
+  let baseUniswapUrl = 'https://app.mochiswap.io/#/swap'
   if (!linkVariable) {
     return baseUniswapUrl
   }

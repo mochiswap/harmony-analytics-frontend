@@ -35,11 +35,11 @@ const theme = (darkMode, color) => ({
   white: '#FFFFFF',
 
   // backgrounds / greys
-  bg1: darkMode ? '#212429' : '#fffdfa',
-  bg2: darkMode ? '#2C2F36' : '#F7F8FA',
-  bg3: darkMode ? '#40444F' : '#EDEEF2',
-  bg4: darkMode ? '#565A69' : '#CED0D9',
-  bg5: darkMode ? '#565A69' : '#888D9B',
+  bg1: darkMode ? '#FFD700' : '#fffdfa',
+  bg2: darkMode ? '#FFD700' : '#FFD700',
+  bg3: darkMode ? '#FFD700' : '#FFD700',
+  bg4: darkMode ? '#FFD700' : '#FFD700',
+  bg5: darkMode ? '#FFD700' : '#FFD700',
   bg6: darkMode ? '#000' : '#FFFFFF',
 
   //specialty colors
@@ -67,11 +67,11 @@ const theme = (darkMode, color) => ({
 
   // other
   red1: '#FF6871',
-  green1: '#27AE60',
+  green1: '#FFD700',
   yellow1: '#FFE270',
   yellow2: '#F3841E',
   link: '#12aab5',
-  blue: '2f80ed',
+  blue: '#6666FF',
 
   background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #4FD8DE 30 0%, #fff 0%)`,
 })
@@ -145,8 +145,6 @@ export const ThemedBackground = styled.div`
   max-width: 100vw !important;
   height: 200vh;
   mix-blend-mode: color;
-  background: ${({ backgroundColor }) =>
-    `radial-gradient(50% 50%, rgba(35, 193, 83, 0.3) 0%, rgba(255, 255, 255, 0) 100%)`};
   position: absolute;
   top: 0px;
   left: 0px;

@@ -76,7 +76,8 @@
     "fix:all": "yarn fix:lint && yarn fix:format",
     "check:lint": "yarn lint",
     "check:format": "yarn format --check",
-    "check:all": "yarn check:lint && yarn check:format"
+    "check:all": "yarn check:lint && yarn check:format",
+    "deploy": "yarn build && aws s3 sync build/ s3://testfarms && aws cloudfront create-invalidation --distribution-id E203CU7AIVXWFY --paths '/*' --profile=kimochi"
   },
   "eslintConfig": {
     "extends": "react-app"

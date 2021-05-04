@@ -40,7 +40,7 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://0x1.exchange/#/` +
+      `https://app.mochiswap.io/#/` +
       (remove ? `remove` : `add`) +
       `/${token0Address === '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2' ? 'BNB' : token0Address}/${'BNB'}`
     )

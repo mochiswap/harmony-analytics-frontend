@@ -4,11 +4,12 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/mochiswapdev/mochiswap',
+    uri: 'https://api.thegraph.com/subgraphs/name/mochiswapdev/mochiswap5',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
 })
+
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({

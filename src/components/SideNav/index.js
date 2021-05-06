@@ -21,9 +21,7 @@ const Wrapper = styled.div`
   top: 0px;
   z-index: 9999;
   box-sizing: border-box;
-  background: linear-gradient(193.68deg, #1b1c22 0.68%, #000000 100.48%);
   color: ${({ theme }) => theme.bg2};
-
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
     position: relative;
@@ -36,9 +34,10 @@ const Wrapper = styled.div`
 
 const Option = styled.div`
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   opacity: ${({ activeText }) => (activeText ? 1 : 0.6)};
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.test6};
   display: flex;
   :hover {
     opacity: 1;

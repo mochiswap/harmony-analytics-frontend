@@ -30,22 +30,23 @@ const theme = (darkMode, color) => ({
   text3: darkMode ? '#6C7284' : '#888D9B',
   text4: darkMode ? '#565A69' : '#C3C5CB',
   text5: darkMode ? '#2C2F36' : '#EDEEF2',
+  test6: darkMode ? '#FFFFFF' : '#000000',
 
   // special case text types
   white: '#FFFFFF',
 
   // backgrounds / greys
-  bg1: darkMode ? '#FFD700' : '#fffdfa',
-  bg2: darkMode ? '#FFD700' : '#FFD700',
-  bg3: darkMode ? '#FFD700' : '#FFD700',
-  bg4: darkMode ? '#FFD700' : '#FFD700',
-  bg5: darkMode ? '#FFD700' : '#FFD700',
-  bg6: darkMode ? '#000' : '#FFFFFF',
+  bg1: darkMode ? '#000000' : '#fffdfa',
+  bg2: darkMode ? '#000000' : '#fffdfa',
+  bg3: darkMode ? '#000000' : '#fffdfa',
+  bg4: darkMode ? '#000000' : '#fffdfa',
+  bg5: darkMode ? '#000000' : '#fffdfa',
+  bg6: darkMode ? '#000000' : '#FFFFFF',
 
   //specialty colors
   modalBG: darkMode ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)',
   advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.4)',
-  onlyLight: darkMode ? '#22242a' : 'transparent',
+  onlyLight: darkMode ? 'transparent' : 'transparent',
   divider: darkMode ? 'rgba(43, 43, 43, 0.435)' : 'rgba(43, 43, 43, 0.035)',
 
   //primary colors
@@ -67,11 +68,11 @@ const theme = (darkMode, color) => ({
 
   // other
   red1: '#FF6871',
-  green1: '#FFD700',
+  green1: '#fff',
   yellow1: '#FFE270',
   yellow2: '#F3841E',
   link: '#12aab5',
-  blue: '#6666FF',
+  blue: '2f80ed',
 
   background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #4FD8DE 30 0%, #fff 0%)`,
 })

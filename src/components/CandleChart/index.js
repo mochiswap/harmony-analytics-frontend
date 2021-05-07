@@ -100,21 +100,21 @@ const CandleStickChart = ({
         },
         grid: {
           vertLines: {
-            color: 'rgba(197, 203, 206, 0.5)',
+            color: 'transparent',
           },
           horzLines: {
-            color: 'rgba(197, 203, 206, 0.5)',
+            color: 'transparent',
           },
         },
         crosshair: {
           mode: CrosshairMode.Normal,
         },
         rightPriceScale: {
-          borderColor: 'rgba(197, 203, 206, 0.8)',
+          borderColor: 'transparent',
           visible: true,
         },
         timeScale: {
-          borderColor: 'rgba(197, 203, 206, 0.8)',
+          borderColor: 'transparent',
         },
         localization: {
           priceFormatter: (val) => formattedNum(val),
@@ -122,12 +122,12 @@ const CandleStickChart = ({
       })
 
       var candleSeries = chart.addCandlestickSeries({
-        upColor: 'green',
-        downColor: 'red',
-        borderDownColor: 'red',
-        borderUpColor: 'green',
-        wickDownColor: 'red',
-        wickUpColor: 'green',
+        upColor: 'white',
+        downColor: 'purple',
+        borderDownColor: 'black',
+        borderUpColor: 'black',
+        wickDownColor: 'black',
+        wickUpColor: 'white',
       })
 
       candleSeries.setData(formattedData)

@@ -52,7 +52,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src= 'https://tokens.0x1.finance/images/0xcc1da2eaa0150b958fd30c3b849d9efe1d365aed.png'
+          src='https://i.ibb.co/jyf0KS1/mochi1.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -62,12 +62,13 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       </StyledEthereumLogo>
     )
   }
-  
-  if (address?.toLowerCase() === '0x00abaa93faf8fdc4f382135a7a56f9cf7c3edd21') {
+
+  //apesox
+  if (address?.toLowerCase() === '0x9e18336e7fe1824023376b2d73e15f3cf49b4b1a') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src= 'https://tokens.0x1.finance/images/0x00abaa93faf8fdc4f382135a7a56f9cf7c3edd21.png'
+          src='https://i.ibb.co/nnsDdYP/ape.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -77,12 +78,44 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
       </StyledEthereumLogo>
     )
   }
-  
+
+  // mochi
+  if (address?.toLowerCase() === '0x055dab90880613a556a5ae2903b2682f8a5b8d27') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://bscscan.com/token/images/mochiswap_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // dogecoin
+  if (address?.toLowerCase() === '0xba2ae424d960c26247dd6c32edc70b295c744c43') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://bscscan.com/token/images/dogecoin_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
   if (address?.toLowerCase() === '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src= 'https://tokens.0x1.finance/images/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png'
+          src='https://tokens.0x1.finance/images/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',

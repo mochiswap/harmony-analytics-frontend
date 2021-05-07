@@ -40,7 +40,9 @@ const Option = styled.div`
   color: ${({ theme }) => theme.test6};
   display: flex;
   :hover {
-    opacity: 1;
+    background: rgb(90,40,191);
+    color: white!important;
+    opacity: 100!important;
   }
 `
 
@@ -68,7 +70,10 @@ const HeaderText = styled.div`
     opacity: 1;
   }
   a {
-    color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.test6};
+  }
+  a:hover {
+    color: blue;
   }
 `
 
@@ -112,6 +117,7 @@ function SideNav({ history }) {
           <AutoColumn gap="1rem" style={{ marginLeft: '.75rem', marginTop: '1.5rem' }}>
             {!below1080 && (
               <AutoColumn gap="1.25rem" style={{ marginTop: '1rem' }}>
+                <img width="84px" src="https://i.ibb.co/jyf0KS1/mochi1.png" alt="logo" style={{ marginLeft: '.75rem', marginTop: '0rem' }}></img>
                 <BasicLink to="/home">
                   <Option activeText={history.location.pathname === '/home' ?? undefined}>
                     <TrendingUp size={20} style={{ marginRight: '.75rem' }} />
@@ -161,8 +167,8 @@ function SideNav({ history }) {
           </AutoColumn>
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
-              {/* <Link href="https://0x1.exchange" target="_blank">
-                0x1.Exchange
+              {/* <Link href="https://fa" target="_blank">
+                fa
               </Link> */}
             </HeaderText>
             <HeaderText>

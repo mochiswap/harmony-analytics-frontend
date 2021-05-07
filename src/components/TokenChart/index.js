@@ -48,7 +48,7 @@ const TokenChart = ({ address, color, base }) => {
   const [frequency, setFrequency] = useState(DATA_FREQUENCY.HOUR)
 
   const [darkMode] = useDarkModeManager()
-  const textColor = darkMode ? 'white' : 'black'
+  const textColor = "darkMode ? 'white' : 'black'"
 
   // reset view on new address
   const addressPrev = usePrevious(address)
@@ -74,18 +74,18 @@ const TokenChart = ({ address, color, base }) => {
   const priceData =
     timeWindow === timeframeOptions.MONTH
       ? // monthly selected
-        frequency === DATA_FREQUENCY.DAY
+      frequency === DATA_FREQUENCY.DAY
         ? dailyMonth
         : hourlyMonth
       : // weekly selected
       timeWindow === timeframeOptions.WEEK
-      ? frequency === DATA_FREQUENCY.DAY
-        ? dailyWeek
-        : hourlyWeek
-      : // all time selected
-      frequency === DATA_FREQUENCY.DAY
-      ? dailyAll
-      : hourlyAll
+        ? frequency === DATA_FREQUENCY.DAY
+          ? dailyWeek
+          : hourlyWeek
+        : // all time selected
+        frequency === DATA_FREQUENCY.DAY
+          ? dailyAll
+          : hourlyAll
 
   // switch to hourly data when switched to week window
   useEffect(() => {
@@ -139,8 +139,8 @@ const TokenChart = ({ address, color, base }) => {
         <RowBetween
           mb={
             chartFilter === CHART_VIEW.LIQUIDITY ||
-            chartFilter === CHART_VIEW.VOLUME ||
-            (chartFilter === CHART_VIEW.PRICE && frequency === DATA_FREQUENCY.LINE)
+              chartFilter === CHART_VIEW.VOLUME ||
+              (chartFilter === CHART_VIEW.PRICE && frequency === DATA_FREQUENCY.LINE)
               ? 40
               : 0
           }

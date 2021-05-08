@@ -129,8 +129,8 @@ function TokenPage({ address, history }) {
     oneDayVolumeUSD || oneDayVolumeUSD === 0
       ? formattedNum(oneDayVolumeUSD === 0 ? oneDayVolumeUT : oneDayVolumeUSD, true)
       : oneDayVolumeUSD === 0
-      ? '$0'
-      : '-'
+        ? '$0'
+        : '-'
 
   // mark if using untracked volume
   const [usingUtVolume, setUsingUtVolume] = useState(false)
@@ -171,12 +171,12 @@ function TokenPage({ address, history }) {
     <PageWrapper>
       <ThemedBackground backgroundColor={transparentize(0.6, backgroundColor)} />
 
-      <Warning
+      {/* <Warning
         type={'token'}
         show={!dismissed && listedTokens && !listedTokens.includes(address)}
         setShow={markAsDismissed}
         address={address}
-      />
+      /> */}
       <ContentWrapper>
         <RowBetween style={{ flexWrap: 'wrap', alingItems: 'start' }}>
           <AutoRow align="flex-end" style={{ width: 'fit-content' }}>

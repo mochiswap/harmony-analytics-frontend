@@ -40,9 +40,7 @@ const Option = styled.div`
   color: ${({ theme }) => theme.test6};
   display: flex;
   :hover {
-    background: rgb(90,40,191);
-    color: white!important;
-    opacity: 100!important;
+    color: #B93CF6;
   }
 `
 

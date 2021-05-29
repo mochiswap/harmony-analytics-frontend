@@ -177,8 +177,8 @@ function AccountPage({ account }) {
           <RowBetween>
             <span>
               <TYPE.header fontSize={24}>{account?.slice(0, 6) + '...' + account?.slice(38, 42)}</TYPE.header>
-              <Link lineHeight={'145.23%'} href={'https://bscscan.com/address/' + account} target="_blank">
-                <TYPE.main fontSize={14}>View on BscScan</TYPE.main>
+              <Link lineHeight={'145.23%'} href={'https://explorer.harmony.one/#/address/' + account} target="_blank">
+                <TYPE.main fontSize={14}>View on Harmony Explorer</TYPE.main>
               </Link>
             </span>
             <AccountWrapper>

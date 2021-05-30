@@ -170,12 +170,12 @@ function SideNav({ history }) {
               </Link> */}
             </HeaderText>
             <HeaderText>
-              <Link href="https://app.mochiswap.io" target="_blank">
+              <Link href="https://one.mochiswap.io" target="_blank">
                 MochiSwap
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://farms.mochiswap.io" target="_blank">
+              <Link href="https://harmony.mochiswap.io" target="_blank">
                 Farming Pool
               </Link>
             </HeaderText>

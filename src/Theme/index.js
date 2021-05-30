@@ -36,12 +36,12 @@ const theme = (darkMode, color) => ({
   white: '#FFFFFF',
 
   // backgrounds / greys
-  bg1: darkMode ? '#000000' : '#fffdfa',
-  bg2: darkMode ? '#000000' : '#fffdfa',
-  bg3: darkMode ? '#000000' : '#fffdfa',
-  bg4: darkMode ? '#000000' : '#fffdfa',
-  bg5: darkMode ? '#000000' : '#fffdfa',
-  bg6: darkMode ? '#000000' : '#FFFFFF',
+  bg1: darkMode ? '#030921' : '#fffdfa',
+  bg2: darkMode ? '#030921' : '#fffdfa',
+  bg3: darkMode ? '#030921' : '#fffdfa',
+  bg4: darkMode ? '#030921' : '#fffdfa',
+  bg5: darkMode ? '#030921' : '#fffdfa',
+  bg6: darkMode ? '#030921' : '#FFFFFF',
 
   //specialty colors
   modalBG: darkMode ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.6)',
@@ -71,8 +71,8 @@ const theme = (darkMode, color) => ({
   green1: '#fff',
   yellow1: '#FFE270',
   yellow2: '#F3841E',
-  link: '#B93CF6',
-  blue: '#B93CF6',
+  link: '#69FABD',
+  blue: '#69FABD',
 
   background: darkMode ? 'black' : `radial-gradient(50% 50% at 50% 50%, #4FD8DE 30 0%, #fff 0%)`,
 })

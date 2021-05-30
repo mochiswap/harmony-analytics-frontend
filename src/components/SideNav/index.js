@@ -40,7 +40,7 @@ const Option = styled.div`
   color: ${({ theme }) => theme.test6};
   display: flex;
   :hover {
-    color: #B93CF6;
+    color: #69FABD;
   }
 `
 
@@ -115,7 +115,7 @@ function SideNav({ history }) {
           <AutoColumn gap="1rem" style={{ marginLeft: '.75rem', marginTop: '1.5rem' }}>
             {!below1080 && (
               <AutoColumn gap="1.25rem" style={{ marginTop: '1rem' }}>
-                <img width="84px" src="https://i.ibb.co/jyf0KS1/mochi1.png" alt="logo" style={{ marginLeft: '.75rem', marginTop: '0rem' }}></img>
+                <img width="84px" src="https://i.ibb.co/Qb6K6SR/favicon.png" alt="logo" style={{ marginLeft: '.75rem', marginTop: '0rem' }}></img>
                 <BasicLink to="/home">
                   <Option activeText={history.location.pathname === '/home' ?? undefined}>
                     <TrendingUp size={20} style={{ marginRight: '.75rem' }} />

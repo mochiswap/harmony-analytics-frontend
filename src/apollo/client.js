@@ -4,7 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://3.232.67.111:8000/subgraphs/name/mochiswap/graph',
+    uri: 'http://3.232.67.111:8000/subgraphs/name/mochiswap/mochiswap1',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -37,7 +37,7 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://3.232.67.111:8000/subgraphs/id/QmZYMtx1nFBCXwN8inBuiaKq6MAFFQ1BZ76aU4DCMYwHu3',
+    uri: 'http://3.232.67.111:8000/subgraphs/id/QmdfLDkfMLdNjegxU4cZJiNuvTX6E8bzDS6U1Puytfq7rc',
   }),
   cache: new InMemoryCache(),
 })

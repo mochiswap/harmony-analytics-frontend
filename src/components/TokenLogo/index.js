@@ -52,7 +52,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src='https://i.ibb.co/jyf0KS1/mochi1.png'
+          src='https://i.ibb.co/Qb6K6SR/favicon.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',

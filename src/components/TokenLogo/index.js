@@ -47,12 +47,44 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   }
 
   // hard coded fixes for trust wallet api issues
-
-  if (address?.toLowerCase() === '0xcc1da2eaa0150b958fd30c3b849d9efe1d365aed') {
+  // onemoon
+  if (address?.toLowerCase() === '0xcb35e4945c7f463c5ccbe3bf9f0389ab9321248f') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src='https://i.ibb.co/Qb6K6SR/favicon.png'
+          src='https://i.ibb.co/GVXPwZ5/onemoon.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // USDT
+  if (address?.toLowerCase() === '0x3c2b8be99c50593081eaa2a724f0b8285f5aba8f') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://harmony.mochiswap.io/images/farms/usdc-usdt.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // BNB
+  if (address?.toLowerCase() === '0xb1f6e61e1e113625593a22fa6aa94f8052bc39e0') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://harmony.mochiswap.io/images/farms/bnb-bmochi.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -64,7 +96,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   }
 
   //apesox
-  if (address?.toLowerCase() === '0x9e18336e7fe1824023376b2d73e15f3cf49b4b1a') {
+  if (address?.toLowerCase() === '0x53051d5545745f600232a885a65479ca832198fb') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -80,11 +112,27 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   }
 
   // mochi
-  if (address?.toLowerCase() === '0x055dab90880613a556a5ae2903b2682f8a5b8d27') {
+  if (address?.toLowerCase() === '0x0dd740db89b9fda3baadf7396ddad702b6e8d6f5') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src='https://bscscan.com/token/images/mochiswap_32.png'
+          src='https://i.ibb.co/Qb6K6SR/favicon.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // bmochi
+  if (address?.toLowerCase() === '0xda73f5c25c0d644afd20da5535558956b192b262') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/jyf0KS1/mochi1.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',
@@ -96,7 +144,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
   }
 
   // dogecoin
-  if (address?.toLowerCase() === '0xba2ae424d960c26247dd6c32edc70b295c744c43') {
+  if (address?.toLowerCase() === '0xF155E1a57DB0Ca820aE37Ab4050e0e4C7cFcEcd0') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
@@ -111,11 +159,92 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  if (address?.toLowerCase() === '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d') {
+  // USDC
+  if (address?.toLowerCase() === '0x985458E523dB3d53125813eD68c274899e9DfAb4') {
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src='https://tokens.0x1.finance/images/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png'
+          src='https://harmony.mochiswap.io/images/farms/1usdc-hmochi.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // ETH
+  if (address?.toLowerCase() === '0x6983D1E6DEf3690C4d616b13597A09e6193EA013') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/1d5h9L8/1ETH.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // sushi
+  if (address?.toLowerCase() === '0xbec775cb42abfa4288de81f387a9b1a3c4bc552a') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/X8Q0pwv/sushi.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // BUSD
+  if (address?.toLowerCase() === '0x0ab43550a6915f9f67d0c454c2e90385e6497eaa' || address?.toLowerCase() === '0xe176ebe47d621b984a73036b9da5d834411ef734') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/xCKFdbq/busd.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  //one
+  if (address?.toLowerCase() === '0xcf664087a5bb0237a0bad6742852ec6c8d69a27a') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/sCCr4Qg/onetoken.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // safemoon
+  if (address?.toLowerCase() === '0x58c5E26fcc4d1d442396D33b58af31549C64d22F') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://i.ibb.co/2W9cS4Z/safemoon.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',

@@ -40,13 +40,13 @@ export function getTimeframe(timeWindow) {
 export function getPoolLink(token0Address, token1Address = null, remove = false) {
   if (!token1Address) {
     return (
-      `https://app.mochiswap.io/#/` +
+      `https://one.mochiswap.io/#/` +
       (remove ? `remove` : `add`) +
       `/${token0Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token0Address}/${'ETH'}`
     )
   } else {
     return (
-      `https://app.mochiswap.io/#/` +
+      `https://one.mochiswap.io/#/` +
       (remove ? `remove` : `add`) +
       `/${token0Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token0Address}/${token1Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token1Address
       }`
@@ -56,19 +56,19 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
 
 export function getSwapLink(token0Address, token1Address = null) {
   if (!token1Address) {
-    return `https://app.mochiswap.io/#/swap?inputCurrency=${token0Address}`
+    return `https://one.mochiswap.io/#/swap?inputCurrency=${token0Address}`
   } else {
-    return `https://app.mochiswap.io/#/swap?inputCurrency=${token0Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token0Address
+    return `https://one.mochiswap.io/#/swap?inputCurrency=${token0Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token0Address
       }&outputCurrency=${token1Address === '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c' ? 'ETH' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://app.mochiswap.io/#/swap/BNB/${token0Address}`
+  return `https://one.mochiswap.io/#/swap/BNB/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://app.mochiswap.io/#/swap'
+  let baseUniswapUrl = 'https://one.mochiswap.io/#/swap'
   if (!linkVariable) {
     return baseUniswapUrl
   }
@@ -357,7 +357,7 @@ export const formattedNum = (number, usd = false, acceptNegatives = false) => {
   }
 
   if (num < 0.0001 && num > 0) {
-    return usd ? '< $0.0001' : '< 0.0001'
+    // return usd ? '< $0.0001' : '< 0.0001'
   }
 
   if (num > 1000) {
@@ -366,7 +366,7 @@ export const formattedNum = (number, usd = false, acceptNegatives = false) => {
 
   if (usd) {
     if (num < 0.1) {
-      return formatDollarAmount(num, 4)
+      return formatDollarAmount(num, 10)
     } else {
       return formatDollarAmount(num, 2)
     }
@@ -394,7 +394,7 @@ export function formattedPercent(percent, useBrackets = false) {
 
   if (percent < 0.0001 && percent > 0) {
     return (
-      <Text fontWeight={500} color="green">
+      <Text fontWeight={500} color="#69FABD">
         {'< 0.0001%'}
       </Text>
     )
@@ -414,9 +414,9 @@ export function formattedPercent(percent, useBrackets = false) {
   }
   if (fixedPercent > 0) {
     if (fixedPercent > 100) {
-      return <Text fontWeight={500} color="green">{`+${percent?.toFixed(0).toLocaleString()}%`}</Text>
+      return <Text fontWeight={500} color="#69FABD">{`+${percent?.toFixed(0).toLocaleString()}%`}</Text>
     } else {
-      return <Text fontWeight={500} color="green">{`+${fixedPercent}%`}</Text>
+      return <Text fontWeight={500} color="#69FABD">{`+${fixedPercent}%`}</Text>
     }
   } else {
     return <Text fontWeight={500} color="red">{`${fixedPercent}%`}</Text>

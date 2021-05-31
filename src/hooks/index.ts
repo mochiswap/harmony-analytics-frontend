@@ -8,8 +8,8 @@ import copy from 'copy-to-clipboard'
 export function useColor(tokenAddress, token) {
   const [color, setColor] = useState('#2172E5')
   if (tokenAddress) {
-    const path = `https://tokens.0x1.finance/images/${isAddress(tokenAddress)}.png`
-	
+    const path = `https://analytics.mochiswap.io/images/${isAddress(tokenAddress)}.png`
+
     if (path) {
       Vibrant.from(path).getPalette((err, palette) => {
         if (palette && palette.Vibrant) {

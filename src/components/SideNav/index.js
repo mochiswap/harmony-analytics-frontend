@@ -118,7 +118,7 @@ function SideNav({ history }) {
                 <img width="84px" src="https://i.ibb.co/Qb6K6SR/favicon.png" alt="logo" style={{ marginLeft: '.75rem', marginTop: '0rem' }}></img>
                 <BasicLink to="/home">
                   <Option activeText={history.location.pathname === '/home' ?? undefined}>
-                    <TrendingUp size={20} style={{ marginRight: '.75rem' }} />
+                    <TrendingUp size={20} style={{ marginRight: '.75rem', color: '#69FABD' }} />
                     Overview
                   </Option>
                 </BasicLink>
@@ -130,7 +130,7 @@ function SideNav({ history }) {
                       undefined
                     }
                   >
-                    <Disc size={20} style={{ marginRight: '.75rem' }} />
+                    <Disc size={20} style={{ marginRight: '.75rem', color: '#69FABD' }} />
                     Tokens
                   </Option>
                 </BasicLink>
@@ -142,7 +142,7 @@ function SideNav({ history }) {
                       undefined
                     }
                   >
-                    <PieChart size={20} style={{ marginRight: '.75rem' }} />
+                    <PieChart size={20} style={{ marginRight: '.75rem', color: '#69FABD' }} />
                     Pairs
                   </Option>
                 </BasicLink>
@@ -155,11 +155,11 @@ function SideNav({ history }) {
                       undefined
                     }
                   >
-                    <List size={20} style={{ marginRight: '.75rem' }} />
+                    <List size={20} style={{ marginRight: '.75rem', color: '#69FABD' }} />
                     Accounts
                   </Option>
                 </BasicLink>
-                <Toggle isActive={isDark} toggle={toggleDarkMode} />
+                {/* <Toggle isActive={isDark} toggle={toggleDarkMode} /> */}
               </AutoColumn>
             )}
           </AutoColumn>

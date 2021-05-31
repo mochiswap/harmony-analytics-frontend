@@ -27,7 +27,7 @@ const theme = (darkMode, color) => ({
 
   text1: darkMode ? '#fffdfa' : '#1F1F1F',
   text2: darkMode ? '#C3C5CB' : '#565A69',
-  text3: darkMode ? '#6C7284' : '#888D9B',
+  text3: darkMode ? '#69FABD' : '#888D9B',
   text4: darkMode ? '#565A69' : '#C3C5CB',
   text5: darkMode ? '#2C2F36' : '#EDEEF2',
   test6: darkMode ? '#FFFFFF' : '#000000',

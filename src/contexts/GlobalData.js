@@ -346,6 +346,10 @@ const getChartData = async (oldestDateToFetch) => {
         dayIndexSet.add((data[i].date / oneDay).toFixed(0))
         dayIndexArray.push(data[i])
         dayData.dailyVolumeUSD = parseFloat(dayData.dailyVolumeUSD)
+        // hard fix for safemoon abnormal behavior with new pools.
+        if (dayData.id === "18775") {
+          dayData.dailyVolumeUSD = 1223526
+        }
       })
 
       // fill in empty days ( there will be no day datas if no trades made that day )
@@ -356,6 +360,7 @@ const getChartData = async (oldestDateToFetch) => {
       while (timestamp < utcEndTime.unix() - oneDay) {
         const nextDay = timestamp + oneDay
         let currentDayIndex = (nextDay / oneDay).toFixed(0)
+        console.log('here', dayIndexSet)
         if (!dayIndexSet.has(currentDayIndex)) {
           data.push({
             date: nextDay,

@@ -1,6 +1,6 @@
-# 0x1 Exchange History
+# MochiSwap Harmony Analytics Exchange History
 
-Check it out live: info.0x1.exchange 
+Check it out live: MochiSwap Harmony Analytics 
 
 ### To Start Development
 

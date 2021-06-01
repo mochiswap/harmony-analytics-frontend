@@ -70,7 +70,7 @@ function GlobalPage() {
       <ContentWrapper>
         <div>
           <AutoColumn gap="24px" style={{ paddingBottom: below800 ? '0' : '24px' }}>
-            <TYPE.largeHeader>{below800 ? 'Analytics' : 'MochiSwap Analytics - '} <a style={{ color: 'aqua', fontSize: '15px', backgroundColor: '#1B295E', padding: '10px', borderRadius: '5px' }}>Harmony ONE</a><span style={{ marginLeft: '10px' }}></span><a href="https://bscanalytics.mochiswap.io" class="button" style={{ color: '#69FABD', fontSize: '15px' }}>BSC</a> </TYPE.largeHeader>
+            <TYPE.largeHeader>{below800 ? 'Analytics' : 'MochiSwap Analytics - '} <a style={{ color: 'aqua', fontSize: '15px', backgroundColor: '#1B295E', padding: '10px', borderRadius: '5px' }}>Harmony ONE</a><span style={{ marginLeft: '10px' }}></span><a href="https://bscanalytics.mochiswap.io" class="button" style={{ color: '#69FABD', fontSize: '15px' }}></a> </TYPE.largeHeader>
             <Search />
             <GlobalStats />
           </AutoColumn>

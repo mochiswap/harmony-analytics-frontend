@@ -63,6 +63,84 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
+  // btc
+  if (address?.toLowerCase() === '0x3095c7557bcb296ccc6e363de01b760ba031f2d9') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://www.bscscan.com/token/images/btcb_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  if (address?.toLowerCase() === '0x6983d1e6def3690c4d616b13597a09e6193ea013') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://www.bscscan.com/token/images/ethereum_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  if (address?.toLowerCase() === '0xf155e1a57db0ca820ae37ab4050e0e4c7cfcecd0') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://www.bscscan.com/token/images/dogecoin_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // usdc
+  if (address?.toLowerCase() === '0x985458e523db3d53125813ed68c274899e9dfab4') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://www.bscscan.com/token/images/centre-usdc_28.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
+  // dogecoin
+  if (address?.toLowerCase() === '0xF155E1a57DB0Ca820aE37Ab4050e0e4C7cFcEcd0') {
+    return (
+      <StyledEthereumLogo size={size} {...rest}>
+        <img
+          src='https://bscscan.com/token/images/dogecoin_32.png'
+          style={{
+            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
+            borderRadius: '24px',
+          }}
+          alt=""
+        />
+      </StyledEthereumLogo>
+    )
+  }
+
   // USDT
   if (address?.toLowerCase() === '0x3c2b8be99c50593081eaa2a724f0b8285f5aba8f') {
     return (
@@ -143,22 +221,6 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     )
   }
 
-  // dogecoin
-  if (address?.toLowerCase() === '0xF155E1a57DB0Ca820aE37Ab4050e0e4C7cFcEcd0') {
-    return (
-      <StyledEthereumLogo size={size} {...rest}>
-        <img
-          src='https://bscscan.com/token/images/dogecoin_32.png'
-          style={{
-            boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
-            borderRadius: '24px',
-          }}
-          alt=""
-        />
-      </StyledEthereumLogo>
-    )
-  }
-
   // USDC
   if (address?.toLowerCase() === '0x985458E523dB3d53125813eD68c274899e9DfAb4') {
     return (
@@ -180,7 +242,7 @@ export default function TokenLogo({ address, header = false, size = '24px', ...r
     return (
       <StyledEthereumLogo size={size} {...rest}>
         <img
-          src='https://i.ibb.co/1d5h9L8/1ETH.png'
+          src='https://www.bscscan.com/token/images/ethereum_32.png'
           style={{
             boxShadow: '0px 6px 10px rgba(0, 0, 0, 0.075)',
             borderRadius: '24px',

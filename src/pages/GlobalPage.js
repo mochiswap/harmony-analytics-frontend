@@ -74,6 +74,7 @@ function GlobalPage() {
             <Search />
             <GlobalStats />
           </AutoColumn>
+          <p style={{ color: 'aqua', fontSize: '12px', marginTop: '0px' }}>*Liquidity does not include SOLO locked values.</p>
           {below800 && ( // mobile card
             <Box mb={20}>
               <Panel>

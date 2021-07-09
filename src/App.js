@@ -109,9 +109,9 @@ function App() {
       <AppWrapper>
         {showWarning && (
           <WarningWrapper>
-            <WarningBanner>
-              {`Warning: The Harmony Shard 0 is experiencing extremely high transactions causing TheGraph data delays. Please check back soon!`}
-            </WarningBanner>
+            {/* <WarningBanner>
+              {`The Harmony network is experiencing increased transaction volume which may cause data delays until resync is complete - Thank You.`}
+            </WarningBanner> */}
           </WarningWrapper>
         )}
         {globalData &&

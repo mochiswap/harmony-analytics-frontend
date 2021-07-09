@@ -2,9 +2,10 @@ import { ApolloClient } from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { HttpLink } from 'apollo-link-http'
 
+//https://api.mochiswap.io/subgraphs/name/mochiswap/mochiswap1
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://3.232.67.111:8000/subgraphs/name/mochiswap/mochiswap1',
+    uri: 'https://api.mochiswap.io/subgraphs/name/mochiswap/mochiswap1',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -13,7 +14,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/index-node/graphql',
+    uri: 'https://graph.viper.exchange/subgraphs/name/venomprotocol/venomswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -35,9 +36,10 @@ export const stakingClient = new ApolloClient({
   shouldBatch: true,
 })
 
+//https://api.mochiswap.io/subgraphs/name/mochiswap/blocks
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://3.232.67.111:8000/subgraphs/id/QmdfLDkfMLdNjegxU4cZJiNuvTX6E8bzDS6U1Puytfq7rc',
+    uri: 'https://api.mochiswap.io/subgraphs/name/mochiswap/blocks',
   }),
   cache: new InMemoryCache(),
 })
